@@ -15,7 +15,9 @@ public class BaseTest implements Constants {
 		RestAssured.basePath = APP_BASE_PATH;
 
 		RequestSpecBuilder reqBuilder = new RequestSpecBuilder();
+		reqBuilder.addHeader("Referer", "https://developer.marvel.com/docs");
 		reqBuilder.setContentType(APP_CONTENT_TYPE);
+		reqBuilder.addQueryParam("apikey", "817e03fbcfbb53dafb799415338848be");
 		RestAssured.requestSpecification = reqBuilder.build();
 
 		ResponseSpecBuilder resBuilder = new ResponseSpecBuilder();
