@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeClass;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
+import project_constants.Constants;
 
 public class BaseTest implements Constants {
 	@BeforeClass

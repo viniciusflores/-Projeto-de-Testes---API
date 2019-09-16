@@ -36,7 +36,7 @@ public class MarvelTest extends BaseTest {
 			.get("/characters/"+idWolverine+"/comics")
 		.then()
 			.statusCode(200)
-			.body("data.total", is(2348))
+			.body("data.total", is(2353))
 		;
 	}
 }
